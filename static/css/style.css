@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.navbar-container{
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.navbar{
+    position: fixed;
+    width: 1250px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.15); /* transparente/fosco */
+    backdrop-filter: blur(12px); /* efeito fosco mais forte */
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    z-index: 1001;
+    
+}
+
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 60px;
+    padding: 20px;  
+}
+
+.nav-links li a{
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: white;
+    position: relative; 
+    display: inline-block; 
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9);
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px; /* linha de destaque maior */
+    bottom: -5px;
+    left: 0;
+    background-color: rgb(255, 0, 162);
+    transition: width 0.3s;
+}
+
+.nav-links li a:hover {
+    color: rgb(255, 0, 162);
+     text-shadow: 0 0 10px #ff00a2, 0 0 20px #000000;
+    transform: translateY(-2px); /* efeito leve ao passar mouse */
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+
+.inicio-section{
+    box-shadow: 0px 0px 50px -15px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 50px -15px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 50px -15px rgba(0,0,0,0.75);
+    width: 100%;
+    position: relative;
+    width: 100%;
+    height: 930px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 200px;
+    color: #fff;
+    background: url('../img/fundo-principal2.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    gap: 10px;
+    overflow: hidden;
+    
+    
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4.5px); /* Aplica o desfoque só no fundo */
+    z-index: 0; /* Fica atrás do conteúdo */
+    pointer-events: none; /* Não interfere nos cliques */
+}
+
+
+.inicio-container{
+    position: relative;
+    z-index: 1;
+    height: 350px;
+    width: 520px;
+    margin-right: 130px; 
+}
+
+.inicio-content h1{
+    font-size: 140px; 
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9);
+}
+
+span{
+    color: rgb(255, 0, 162); 
+     text-shadow: 0 0 10px #ff00a2, 0 0 20px #000000;
+}
+
+.inicio-content span{
+    margin-left: 5px;
+    color: rgb(255, 0, 162); 
+    font-size: 50px;
+    text-shadow: 0 0 10px #ff00a2, 0 0 20px #000000;
+}
+
+.img-container img{
+    width: 525px;
+    height: 525px;
+    display: inline-block;
+    border-radius: 300px;
+    position: relative;
+    z-index: 1;
+    margin-left: 30px;
+   box-shadow: 2px 6px 11px -1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 6px 11px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 6px 11px -1px rgba(0,0,0,0.75);
+}
+
+.img-container img:hover{
+    transform: scale(1.07);
+}
+
+
+.sobre-section {
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* Fundo cyberpunk */
+    background: radial-gradient(circle at center, #2C0B2C, #050008 70%);
+    position: relative; /* necessário para o pseudo-elemento */
+    color: #fff; /* caso queira texto branco */
+}
+
+/* Scanlines na seção - versão estável */
+.sobre-section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(
+        rgba(255,255,255,0.02) 1px,
+        transparent 1px
+    );
+    background-size: 100% 4px; /* cada linha ocupa 4px verticalmente */
+    pointer-events: none;
+    z-index: 0; /* garante que o conteúdo fique acima */
+}
+
+/* Conteúdo acima das scanlines */
+.sobre-section > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.sobre-container{
+    width: 1200px;
+    height: 690px;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 30px;
+    box-shadow: 
+    0 0 6px #FF00A2,
+    0 0 12px #FF00A2;
+}
+
+
+
+.sobre-content{
+    padding: 10px;
+}
+
+.sobre-content h2{
+    margin-top: 25px;
+    margin-bottom: 60px;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+}
+
+.sobre-content p{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
+}
+
+.habilidades-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start; 
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
+
+    /* Fundo cyberpunk */
+    background: radial-gradient(circle at center, #2C0B2C, #050008 70%);
+    position: relative; /* necessário para o pseudo-elemento */
+    color: #ffffff;
+}
+
+/* Scanlines na seção */
+.habilidades-section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(
+        rgba(255,255,255,0.02) 1px,
+        transparent 1px
+    );
+    background-size: 100% 4px; /* cada “linha” ocupa 4px */
+    pointer-events: none;
+    z-index: 0;
+}
+
+
+.habilidades-container{
+    width: 1250px;
+    margin-top: 70px;
+    
+}
+
+.habilidades-container h2{
+    margin-bottom: 70px;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+}
+
+.habilidades-content{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+}
+
+
+.card{
+    width: 340px;
+    height: 320px;
+    background-color: transparent;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 
+    0 0 6px #FF00A2,
+    0 0 12px #FF00A2;
+    transition: transform 0.3s ease;
+    
+}
+
+
+.card:hover{
+    transform: scale(0.92);
+}
+
+.card-content{
+    width: 300px;
+    height: 280px;
+    background-color: rgb(53, 1, 53);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 26px;
+    transition: transform 0.3s ease;
+}
+
+.card-content:hover{
+    transform: scale(1.14);
+}
+
+.card-content img{
+    width: 200px;
+}
+
+
+
+.card-content h3{
+    font-size: 30px;
+}
