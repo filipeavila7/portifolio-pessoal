@@ -144,6 +144,13 @@
                         <h3>React Native</h3>
                     </div>
                 </div>
+                <div class="card">
+                    <div class="card-content">
+                        <img src="static/img/Microsoft.VisualStudio.Services.Icons.Default" alt>
+                        <h3>SqlAlchemy</h3>
+                    </div>
+                </div>
+            </div>
             </section>
 
             <section class="formacao-section" id="formacoes">
@@ -177,57 +184,63 @@
                 </div>
             </section>
 
-            <section  id="certificados" class="certificados-section">
+            <section id="certificados" class="certificados-section">
                 <h2>Certificados</h2>
                 <div class="slider-container">
-
 
                 </div>
             </section>
 
-
-            <section class="projetos-section"  id="projetos"> 
-                <h2>Projetos</h2> 
+            <section class="projetos-section" id="projetos">
+                <h2>Projetos</h2>
                 <div class="projetos-container">
-                    <div class="projetos-cards">
+                    <div class="projetos-cards" data-modal="modal1">
                         <div class="img-projetos-container">
-                            <img src="static/img/fundo-principal.jpg" alt="">
+                            <img src="static/img/fundo-principal.jpg" alt>
                         </div>
                         <div class="projetos-cards-content">
                             <h3>Sistema de Irrigação</h3>
                         </div>
                         <div class="tecnologias-container">
-                            <button>teste</button>
-                            <button>teste</button>
+                            <button>Flask</button>
+                            <button>Web</button>
+                            <button>SqlAlchemy</button>
                         </div>
                     </div>
-                    <div class="projetos-cards">
+                    <div class="projetos-cards" data-modal="modal2">
                         <div class="img-projetos-container">
-                            <img src="static/img/premium_photo-1685148902854-9b9bb49fff08.jpg" alt="">
+                            <img
+                                src="static/img/premium_photo-1685148902854-9b9bb49fff08.jpg"
+                                alt>
                         </div>
                         <div class="projetos-cards-content">
                             <h3>API Barbearia</h3>
                         </div>
                         <div class="tecnologias-container">
-                            <button>teste</button>
-                            <button>teste</button>
+                            <button>Flask</button>
+                            <button>SqlAlchemy</button>
+                            <button>Python</button>
                         </div>
                     </div>
-                    <div class="projetos-cards">
+                    <div class="projetos-cards" data-modal="modal3">
                         <div class="img-projetos-container">
-                            <img src="static/img/retro-cyberpunk-style-80s-sci-fi-background-futuristic-with-laser-grid-landscape-v_2454227jpg!w700wp.webp" alt="">
+                            <img
+                                src="static/img/retro-cyberpunk-style-80s-sci-fi-background-futuristic-with-laser-grid-landscape-v_2454227jpg!w700wp.webp"
+                                alt>
                         </div>
                         <div class="projetos-cards-content">
                             <h3>TodoList Mobile</h3>
                         </div>
                         <div class="tecnologias-container">
-                            <button>teste</button>
-                            <button>teste</button>
+                            <button>Flet</button>
+                            <button>SqlAlchemy</button>
                         </div>
                     </div>
-                    <div class="projetos-cards">
+                    <div class="projetos-cards" data-modal="modal4">
                         <div class="img-projetos-container">
-                            <img src="static/img/7795860-retro-sci-fi-fundo-futurista-1980-e-1990-style-3d-illustration-digital-landscape-in-a-cyber-world-for-use-as-design-cover-gratis-vetor.jpg" alt="">
+                            <img
+                                src="static/img/7795860-retro-sci-fi-fundo-futurista-1980-e-1990-style-3d-illustration-digital-landscape-in-a-cyber-world-for-use-as-design-cover-gratis-vetor.jpg"
+                                alt>
                         </div>
                         <div class="projetos-cards-content">
                             <h3>Gerenciador de Gastos</h3>
@@ -237,9 +250,11 @@
                             <button>teste</button>
                         </div>
                     </div>
-                    <div class="projetos-cards">
+                    <div class="projetos-cards" data-modal="modal5">
                         <div class="img-projetos-container">
-                            <img src="static/img/dark-background-with-purple-neon-city-words-cyberpunk-it_818261-1297.jpg" alt="">
+                            <img
+                                src="static/img/dark-background-with-purple-neon-city-words-cyberpunk-it_818261-1297.jpg"
+                                alt>
                         </div>
                         <div class="projetos-cards-content">
                             <h3>Landing Page Meio Ambiente</h3>
@@ -249,9 +264,11 @@
                             <button>teste</button>
                         </div>
                     </div>
-                    <div class="projetos-cards">
+                    <div class="projetos-cards" data-modal="modal6">
                         <div class="img-projetos-container">
-                            <img src="static/img/retro-futuristic-synthwave-retrowave-styled-600nw-1652606221.webp" alt="">
+                            <img
+                                src="static/img/retro-futuristic-synthwave-retrowave-styled-600nw-1652606221.webp"
+                                alt>
                         </div>
                         <div class="projetos-cards-content">
                             <h3>Jogo da Velha</h3>
@@ -261,9 +278,41 @@
                             <button>teste</button>
                         </div>
                     </div>
-                   
-                    
-                    
+
+                </div>
+                <div class="modal" id="modal1">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Sistema de Irrigação</h2>
+                        <p>Projeto web desenvolvido com Python (Flask) que
+                            permite o monitoramento em tempo real da situação de
+                            válvulas de irrigação em hortas ou jardins
+                            automatizados. A aplicação exibe o estado atual de
+                            cada válvula (aberta ou fechada), facilitando a
+                            gestão remota da irrigação. Além disso, integra uma
+                            API de clima para mostrar dados essenciais como
+                            temperatura, umidade, vento e outras condições
+                            ambientais, ajudando a tomar decisões mais precisas
+                            sobre a irrigação. Ideal para agricultura de
+                            precisão e controle automatizado de pequenos
+                            cultivos.</p>
+                        <button>Ver Repositório</button>
+                    </div>
+                </div>
+                <div class="modal" id="modal2">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>API Barbearia</h2>
+                        <p>API RESTful desenvolvida para gerenciar o fluxo de
+                            agendamentos de horários em uma barbearia. Permite o
+                            cadastro de clientes, controle de serviços
+                            oferecidos, horários disponíveis, agendamentos e
+                            valores de cada atendimento. A solução visa
+                            facilitar a organização do atendimento, evitando
+                            conflitos de horário e automatizando o controle
+                            financeiro dos serviços prestados.</p>
+                        <button>Ver Repositório</button>
+                    </div>
                 </div>
             </section>
 
