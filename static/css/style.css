@@ -6,6 +6,41 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Fonte cyberpunk opcional */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+
+    /* Fundo cyberpunk */
+    background: radial-gradient(circle at center, #2C0B2C, #050008 70%);
+    color: #fff;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Scanlines no body - versão estável */
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: linear-gradient(
+        rgba(255,255,255,0.02) 1px,
+        transparent 1px
+    );
+    background-size: 100% 4px; /* cada linha ocupa 4px verticalmente */
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Conteúdo acima das scanlines */
+body > * {
+    position: relative;
+    z-index: 1;
+}
 
 .navbar-container{
     display: flex;
@@ -68,9 +103,6 @@
 
 
 .inicio-section{
-    box-shadow: 0px 0px 50px -15px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 0px 0px 50px -15px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 50px -15px rgba(0,0,0,0.75);
     width: 100%;
     position: relative;
     width: 100%;
@@ -94,7 +126,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(4.5px); /* Aplica o desfoque só no fundo */
+    backdrop-filter: blur(4.2px); /* Aplica o desfoque só no fundo */
+    background-color: rgba(0, 0, 0, 0.1);
     z-index: 0; /* Fica atrás do conteúdo */
     pointer-events: none; /* Não interfere nos cliques */
 }
@@ -113,10 +146,10 @@
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9);
 }
 
-span{
-    color: rgb(255, 0, 162); 
+/*pan{
+     color: rgb(255, 0, 162); 
      text-shadow: 0 0 10px #ff00a2, 0 0 20px #000000;
-}
+} */
 
 .inicio-content span{
     margin-left: 5px;
@@ -150,32 +183,7 @@ span{
     align-items: center;
     justify-content: center;
 
-    /* Fundo cyberpunk */
-    background: radial-gradient(circle at center, #2C0B2C, #050008 70%);
-    position: relative; /* necessário para o pseudo-elemento */
-    color: #fff; /* caso queira texto branco */
 }
-
-/* Scanlines na seção - versão estável */
-.sobre-section::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: linear-gradient(
-        rgba(255,255,255,0.02) 1px,
-        transparent 1px
-    );
-    background-size: 100% 4px; /* cada linha ocupa 4px verticalmente */
-    pointer-events: none;
-    z-index: 0; /* garante que o conteúdo fique acima */
-}
-
-/* Conteúdo acima das scanlines */
-.sobre-section > * {
-    position: relative;
-    z-index: 1;
-}
-
 
 
 .sobre-container{
@@ -220,25 +228,9 @@ span{
     align-items: center;
     gap: 150px;
 
-    /* Fundo cyberpunk */
-    background: radial-gradient(circle at center, #2C0B2C, #050008 70%);
-    position: relative; /* necessário para o pseudo-elemento */
-    color: #ffffff;
+    
 }
 
-/* Scanlines na seção */
-.habilidades-section::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: linear-gradient(
-        rgba(255,255,255,0.02) 1px,
-        transparent 1px
-    );
-    background-size: 100% 4px; /* cada “linha” ocupa 4px */
-    pointer-events: none;
-    z-index: 0;
-}
 
 
 .habilidades-container{
@@ -299,7 +291,8 @@ span{
 }
 
 .card-content:hover{
-    transform: scale(1.14);
+    transform: scale(1.15);
+    background-color: rgb(77, 2, 77);
 }
 
 .card-content img{
@@ -310,4 +303,177 @@ span{
 
 .card-content h3{
     font-size: 30px;
+}
+
+.formacao-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formacao-section h2{
+    margin-top: 70px;
+    margin-bottom: 60px;
+    color: white;
+    font-size: 60px;
+}
+
+.formacao-container{
+    width: 1250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.formacao-card{
+    background-color: rgb(53, 1, 53);
+    width: 100%;
+    height: 270px;
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 
+    0 0 6px #FF00A2,
+    0 0 12px #FF00A2;
+    transition: transform 0.3s ease;
+}
+
+
+
+.formacao-card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+
+.formacao-card-content h3{
+    font-size: 30px;
+    color: rgb(230, 2, 146); 
+    text-shadow: 0 0 10px #dc008c, 0 0 20px #4d0038;
+}
+
+.formacao-card-content span{
+    font-size: 16px;
+    color: #b18aff;
+}
+
+.formacao-card-content p{
+    font-size: 17px;
+}
+
+.certificados-section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 900px;
+}
+
+.certificados-section h2{
+    margin-top: 70px;
+    font-size: 60px;
+    color: white;
+}
+
+.projetos-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projetos-section h2{
+    margin-top: 70px;
+    font-size: 60px;
+    color: white;
+}
+
+
+.projetos-container{
+    margin-top: 30px;
+    width: 1250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.projetos-cards{
+    width: 600px;
+    height: 490px;
+    background-color: rgb(31, 0, 31);
+    border-radius: 20px;
+    box-shadow: 
+    0 0 6px #c90180,
+    0 0 12px #ce0083;
+    transition: transform 0.3s ease;
+}
+
+.projetos-cards-content{
+    display: flex;
+    justify-content: center;
+
+}
+
+.projetos-cards-content h3{
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+
+.img-projetos-container{
+    width: 100%;
+    height: 350px;
+}
+
+.img-projetos-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+
+.tecnologias-container {
+    margin-top: 40px;
+    justify-content: center;
+    gap: 10px;
+    display: flex;
+
+    /* animação */
+    opacity: 0;
+    transform: translateY(15px);
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+.tecnologias-container button{
+    padding: 7px;
+    display: inline-block;
+    width: 80px;
+    border-radius: 20px;
+    border: none;
+    font-size: 13px;
+    
+}
+
+.projetos-cards:hover{
+    transform: translateY(-10px);
+    box-shadow: 
+    0 0 6px #ff3db8,
+    0 0 12px #ff42ba;
+}
+
+.projetos-cards:hover .tecnologias-container {
+    display: flex; /* pode ser omitido se o elemento já estiver no fluxo */
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
 }
