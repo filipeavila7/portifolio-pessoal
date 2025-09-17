@@ -21,3 +21,23 @@
       e.target.style.display = 'none';
     }
   });
+
+
+
+
+// animaçãon de scroll
+const faders = document.querySelectorAll('.fade-scroll');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show'); // entra
+        } else {
+            entry.target.classList.remove('show'); // sai e pode entrar de novo
+        }
+    });
+}, {
+    threshold: 0.1
+});
+
+faders.forEach(fader => observer.observe(fader));

@@ -6,6 +6,20 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Todos os elementos começam invisíveis e levemente deslocados para baixo */
+.fade-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Quando entra na tela, adiciona a classe show */
+.fade-scroll.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 /* Fonte cyberpunk opcional */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&display=swap');
 
@@ -155,6 +169,27 @@ body > * {
     margin-left: 5px;
     color: rgb(255, 0, 162); 
     font-size: 50px;
+    text-shadow: 0 0 10px #ff00a2, 0 0 20px #000000;
+}
+
+
+.social-links{
+    display: flex;
+    width: 370px;
+    margin-top: 20px;
+    gap: 8px;
+    
+}
+
+.social-links a{
+    color:#fff;
+    font-size:2.6rem;
+    margin:0 0.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover{
+    color: rgb(255, 0, 162);
     text-shadow: 0 0 10px #ff00a2, 0 0 20px #000000;
 }
 
@@ -555,3 +590,4 @@ body > * {
   cursor: pointer;
   
 }
+
