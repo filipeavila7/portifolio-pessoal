@@ -7,8 +7,9 @@
         <title>Portfólio-Filipe</title>
         <link rel="stylesheet" href="static/css/style.css">
         <link rel="icon" type="image/png" href="static/img/ghost.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-          <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
 
     <body>
@@ -30,18 +31,22 @@
         <section id="inicio" class="inicio-section">
             <div class="overlay"></div>
             <div class="inicio-container">
-                <div  class="inicio-content fade-scroll ">
+                <div class="inicio-content fade-scroll ">
                     <h1>Filipe Pereira</h1>
                     <span>Fullstack Dev 侍</span>
-                     <div class="social-links">
-                        <a href="https://instagram.com/filipe_spn" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://linkedin.com/in/seu-perfil" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/filipeavila7" target="_blank"><i class="fab fa-github"></i></a>
+                    <div class="social-links">
+                        <a href="https://instagram.com/filipe_spn"
+                            target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/in/seu-perfil"
+                            target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/filipeavila7"
+                            target="_blank"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
 
-            <div  class="img-container fade-scroll">
+            <div class="img-container fade-scroll">
                 <img src="static/img/WhatsApp Image 2025-08-31 at 14.43.31.jpeg"
                     alt>
             </div>
@@ -196,8 +201,31 @@
 
         <section id="certificados" class="certificados-section">
             <h2>Certificados</h2>
-            <div class="slider-container">
+            <div class="carousel">
+                <div class="carousel-track">
+                    <div class="carousel-slide"><img
+                            src="/static/img/15095438-fundo-preto-gradiente-abstrato-vetor.jpg"
+                            alt="Slide 1"></div>
+                    <div class="carousel-slide"><img
+                            src="/static/img/15095438-fundo-preto-gradiente-abstrato-vetor.jpg"
+                            alt="Slide 1"></div>
+                    <div class="carousel-slide"><img
+                            src="/static/img/15095438-fundo-preto-gradiente-abstrato-vetor.jpg"
+                            alt="Slide 1"></div>
+                    <div class="carousel-slide"><img
+                            src="/static/img/15095438-fundo-preto-gradiente-abstrato-vetor.jpg"
+                            alt="Slide 1"></div>
+                </div>
 
+                <button class="carousel-button prev">&#10094;</button>
+                <button class="carousel-button next">&#10095;</button>
+
+                <div class="carousel-indicators">
+                    <button class="active"></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </div>
             </div>
         </section>
 
@@ -377,7 +405,39 @@
             </div>
         </section>
 
-        <script src="static/js/script.js"></script>]
+        <section id="contato" class="contato-section">
+            <h2>Contato</h2>
+            <div class="contato-container">
+                <div class="titulo" >
+                    <h3>Me envie uma mensagem!</h3>
+                </div>
+                <form  action="">
+                    <label for="email">Email:</label>
+                    <input id="email" name="email" required placeholder="exemplo@email" type="email">
+
+                    <label for="msg">Mensagem:</label>
+                    <textarea name="msg" required id="msg" placeholder="Mande sua mensagem!"></textarea>
+
+                    <button type="submit">Enviar</button>
+
+                
+                </form>
+            </div>
+        </section>
+
+
+        <footer class="rodape">
+            <div class="empresa">
+                <h3>© 2025 Shipins – Todos os direitos reservados</h3>
+            </div>
+
+            <div class="links">
+
+            </div>
+            
+        </footer>
+
+        <script src="static/js/script.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>AOS.init();</script>
     </body>
