@@ -185,6 +185,8 @@ body > * {
     
 }
 
+
+
 .social-links a{
     color:#fff;
     font-size:2.6rem;
@@ -655,6 +657,7 @@ body > * {
 .modal-content p{
     margin-top: 30px;
     font-size: 19px;
+    text-shadow: 0 0 10px #b7b6b6;
 }
 
 .modal-content button{
