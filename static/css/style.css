@@ -970,7 +970,7 @@ textarea::placeholder {
 
     .formacao-section{
         padding: 20px;
-        height: 700px;
+        height: 830px;
     }
 
     .formacao-section h2{
@@ -1001,6 +1001,7 @@ textarea::placeholder {
 
     .certificados-section{
         padding: 20px;
+        height: 650px;
     }
 
     .certificados-section h2{
@@ -1020,13 +1021,24 @@ textarea::placeholder {
         padding: 20px;
     }
 
+    .projetos-section h2{
+        font-size: 40px;
+        margin-top: 0;
+    }
+
     .projetos-container{
         width: 100%;
+    }
+
+    .projetos-cards-content h3{
+        font-size: 22px;
     }
 
     .projetos-cards{
         height: 320px;
     }
+
+
 
     .img-projetos-container{
         height: 200px;
@@ -1040,5 +1052,35 @@ textarea::placeholder {
         padding: 4px;
         font-size: 12px;
     }
+
+
+    .modal-content{
+        width: 100%;
+        padding: 20px;
+        height: 500px;
+
+    }
+
+    .modal-content h2{
+        margin-top: 25px;
+    }
+
+    .modal-content .close{
+        right: 10px;
+    }
+
+    .modal-content p{
+        font-size: 15px;
+    }
+
+    .modal-content button{
+        font-size: 15px;
+        padding: 15px;
+        margin-top: 35px;
+        width: 170px;
+        
+    }
+
+
 
 }
