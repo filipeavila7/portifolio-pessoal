@@ -875,6 +875,10 @@ textarea::placeholder {
         display: none;
     }
 
+    .overlay{
+        backdrop-filter: blur(4.5px);
+    }
+
 
     .inicio-section{
         height: 910px;
@@ -1079,6 +1083,19 @@ textarea::placeholder {
         margin-top: 35px;
         width: 170px;
         
+    }
+
+
+    .contato-section{
+        padding: 20px;
+    }
+
+    .contato-container{
+        width: 100%;
+    }
+
+    .rodape{
+        width: 100%;
     }
 
 
