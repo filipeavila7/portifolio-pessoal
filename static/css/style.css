@@ -1012,4 +1012,33 @@ textarea::placeholder {
         height: 350px;
     }
 
+    .carousel-button{
+        font-size: 1.5rem;
+    }
+
+    .projetos-section{
+        padding: 20px;
+    }
+
+    .projetos-container{
+        width: 100%;
+    }
+
+    .projetos-cards{
+        height: 320px;
+    }
+
+    .img-projetos-container{
+        height: 200px;
+    }
+
+    .tecnologias-container{
+        margin-top: 30px;
+    }
+
+    .tecnologias-container button{
+        padding: 4px;
+        font-size: 12px;
+    }
+
 }
