@@ -1065,6 +1065,10 @@ textarea::placeholder {
 
     }
 
+    .modal{
+        width: 100%;
+    }
+
     .modal-content h2{
         margin-top: 25px;
     }
