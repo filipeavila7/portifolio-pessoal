@@ -1038,6 +1038,7 @@ textarea::placeholder {
 
     .projetos-container{
         width: 100%;
+        gap: 60px;
     }
 
     .projetos-cards-content h3{
