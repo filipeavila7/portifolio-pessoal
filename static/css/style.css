@@ -925,7 +925,7 @@ textarea::placeholder {
 
 
     .sobre-section{
-        padding: 20px;
+        padding: 30px;
     }
 
     .sobre-container{
@@ -979,7 +979,7 @@ textarea::placeholder {
     }
 
     .formacao-section{
-        padding: 20px;
+        padding: 30px;
         height: 830px;
     }
 
@@ -1010,7 +1010,7 @@ textarea::placeholder {
     }
 
     .certificados-section{
-        padding: 20px;
+        padding: 30px;
         height: 650px;
     }
 
@@ -1028,7 +1028,7 @@ textarea::placeholder {
     }
 
     .projetos-section{
-        padding: 20px;
+        padding: 30px;
     }
 
     .projetos-section h2{
@@ -1061,6 +1061,7 @@ textarea::placeholder {
     .tecnologias-container button{
         padding: 4px;
         font-size: 12px;
+        width: 85px;
     }
 
 
@@ -1098,7 +1099,7 @@ textarea::placeholder {
 
 
     .contato-section{
-        padding: 20px;
+        padding: 30px;
     }
 
     .contato-container{
