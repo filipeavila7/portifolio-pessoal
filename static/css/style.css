@@ -970,11 +970,17 @@ textarea::placeholder {
 
     .formacao-section{
         padding: 20px;
+        height: 700px;
     }
+
+    .formacao-section h2{
+        font-size: 40px;
+    }
+    
 
     .formacao-card{
         padding: 20px;
-        height: 325px;
+        height: 335px;
     }
 
     .formacao-container{
@@ -991,6 +997,19 @@ textarea::placeholder {
 
     .formacao-card p{
         font-size: 13px;
+    }
+
+    .certificados-section{
+        padding: 20px;
+    }
+
+    .certificados-section h2{
+        font-size: 40px;
+    }
+
+    .carousel{
+        width: 100%;
+        height: 350px;
     }
 
 }
