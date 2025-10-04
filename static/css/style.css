@@ -937,23 +937,60 @@ textarea::placeholder {
         width: 100%;
     }
 
+    .habilidades-container h2{
+        font-size: 40px;
+    }
+
     .habilidades-content{
         gap: 70px;
     }
 
     .card{
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
     }
 
     .card-content{
-        width: 260px;
-        height: 260px;
+        width: 210px;
+        height: 210px;
         gap: 13px;
     }
 
+    .card-content:hover{
+        transform: scale(1.17);
+    }
+
     .card-content h3{
-        font-size: 25px;
+        font-size: 23px;
+    }
+
+    .card-content img{
+        width: 150px;
+    }
+
+    .formacao-section{
+        padding: 20px;
+    }
+
+    .formacao-card{
+        padding: 20px;
+        height: 325px;
+    }
+
+    .formacao-container{
+        width: 100%;
+    }
+
+    .formacao-card-content h3{
+        font-size: 20px;
+    }
+
+    .formacao-card-content span{
+        font-size: 14px;
+    }
+
+    .formacao-card p{
+        font-size: 13px;
     }
 
 }
