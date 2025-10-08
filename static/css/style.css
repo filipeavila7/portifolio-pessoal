@@ -1107,8 +1107,45 @@ textarea::placeholder {
         width: 100%;
     }
 
+    .contato-section h2{
+        font-size: 40px;
+    }
+
     .rodape{
         width: 100%;
+    }
+
+    .contato-container{
+        height: 440px;
+    }
+
+    .contato-container form{
+        gap: 12px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .contato-container form label{
+        font-size: 18px;
+    }
+
+    .contato-container form input{
+        font-size: 18px;
+    }
+
+    .contato-container form textarea{
+        font-size: 18px;
+        height: 95px;
+    }
+
+    .contato-container button{
+        margin-top: 20px;
+        padding: 13px;
+        font-size: 18px;
+    }
+
+    .titulo h3{
+        font-size: 21px;
     }
 
 
