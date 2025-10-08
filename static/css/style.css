@@ -939,11 +939,11 @@ textarea::placeholder {
 
 
     .inicio-section{
-        height: 910px;
+        height: 900px;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding-top: 130px;
+        padding-top: 100px;
     }
 
     .inicio-container{
