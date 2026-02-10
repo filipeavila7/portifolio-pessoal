@@ -142,7 +142,7 @@ html, body {
     align-items: flex-start;
     padding-top: 200px;
     color: #fff;
-    background: url('../img/fundo-principal2.jpg') center/cover no-repeat;
+    background: url('../img/fundo-principal2.jpg ') center/cover no-repeat;
     background-attachment: fixed;
     gap: 10px;
     overflow: hidden;
